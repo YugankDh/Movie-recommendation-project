@@ -45,8 +45,8 @@ df1['Rating'] = df1['Rating'].fillna(round(df1['Rating'].mean(),1))
 
 
 
-st.header("🎬 Movie Recommendation System")
-st.space("small")
+st.title("🎬 Movie Recommendation System")
+
 user_input = st.text_input("Enter any keyword ",placeholder="Year / Genre / Cast / Director")
 
 if st.button("Recommend movies"):
@@ -64,3 +64,4 @@ if st.button("Recommend movies"):
 
 # imporve ui
 # improve performance by wrapping processing in a function and using cache data on streamlit
+
